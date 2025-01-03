@@ -26,6 +26,8 @@
     
             // Adicionando mensagem ao término do evento
             const mensagemHero = document.querySelector('.hero__message');
+            mensagemHero.classList.remove('hero__message--hidden')
+            
             mensagemHero.innerHTML = `
                 <h2>O evento já aconteceu!</h2>
                 <p>Obrigado por acompanhar! Fique ligado para mais novidades e eventos futuros.</p>
