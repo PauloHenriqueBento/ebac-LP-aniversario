@@ -1,0 +1,112 @@
+@use 'variables';
+@use 'components/infos_bar';
+@use 'components/buttons';
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url('../images/background_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secundaryTextColor;
+        opacity: .7;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__countdown{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        &__item {
+            display: flex;
+            min-width: 200px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 46px;
+            background-color: rgba(variables.$countdownBackground, 0.8);            border-radius: 22px;
+
+            &__number {
+                font-size: 64px;
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+
+            &__info {
+                font-size: 16px;
+                font-weight: lighter;
+                text-transform: uppercase;
+            }
+
+            // Tablet
+            @media (max-width: 1024px) {
+                min-width: unset;
+                padding: 24px;
+                margin-bottom: 20px;
+
+                &__number{
+                    font-size: 32px;
+                }
+            }
+        }
+
+        // Tablet
+        @media (max-width: 1024px) {
+            display: block;
+            padding: 0 30px;
+        }
+    }
+
+    &__message{
+        text-align: center;
+        margin-top: 20px;
+        background-color: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+
+        h2{
+            color: #ff5733;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+    }
+
+     // Tablet
+     @media (max-width: 1024px) {
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}

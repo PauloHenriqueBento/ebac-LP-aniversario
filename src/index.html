@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero__text">Prepare-se para celebrar, porque o melhor ainda está por vir!</h1>
+            <ul class="hero__countdown">
+                <li class="hero__countdown__item">
+                    <span id="dias" class="hero__countdown__item__number"></span>
+                    <span class="hero__countdown__item__info">Dias</span>
+                </li>
+                <li class="hero__countdown__item">
+                    <span id="horas" class="hero__countdown__item__number"></span>
+                    <span class="hero__countdown__item__info">Horas</span>
+                </li>
+                <li class="hero__countdown__item">
+                    <span id="minutos" class="hero__countdown__item__number"></span>
+                    <span class="hero__countdown__item__info">Minutos</span>
+                </li>
+                <li class="hero__countdown__item">
+                    <span id="segundos" class="hero__countdown__item__number"></span>
+                    <span class="hero__countdown__item__info">Segundos</span>
+                </li>
+            </ul>
+            <div class="hero__message">
+                
+            </div>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Rua alguma coisa - Algum bairro - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        23/06/2024 às 19hrs
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Entrada</b>
+                        De graça
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="party">
+        <div class="container" data-aos="fade-right">
+            <div class="party__details">
+                <h2 class="party__details__title">Música</h2>
+                <p class="party__details__description">
+                    Prepare-se para dançar ao som dos maiores sucessos com nosso DJ exclusivo! Uma playlist feita para agradar todos os gostos e manter a animação até o último minuto.
+                </p>
+            </div>
+            <img class="party__image" src="./images/musica.jpg" alt="Música">
+        </div>
+    </section>
+    
+    <section class="party party--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="party__details">
+                <h2 class="party__details__title">Comida</h2>
+                <p class="party__details__description">
+                    Um buffet delicioso com pratos e petiscos variados, incluindo opções vegetarianas e sobremesas irresistíveis. Não perca a chance de experimentar nossos drinks especiais!
+                </p>
+            </div>
+            <img class="party__image" src="./images/comida.jpg" alt="Comida">
+        </div>
+    </section>
+    
+    <section class="party">
+        <div class="container" data-aos="fade-right">
+            <div class="party__details">
+                <h2 class="party__details__title">Decoração</h2>
+                <p class="party__details__description">
+                    Um ambiente mágico e temático, pensado nos mínimos detalhes para tornar essa festa inesquecível. Cores, luzes e uma vibe que vai encantar você!
+                </p>
+            </div>
+            <img class="party__image" src="./images/decoracao.jpg" alt="Decoração">
+        </div>
+    </section>
+    
+    <section class="party party--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="party__details">
+                <h2 class="party__details__title">Programação</h2>
+                <p class="party__details__description">
+                    Uma noite cheia de surpresas, com apresentações, jogos e momentos especiais. Fique de olho nos horários para não perder nada do que preparamos com carinho!
+                </p>
+            </div>
+            <img class="party__image" src="./images/programacao.jpg" alt="Programação">
+        </div>
+    </section>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
