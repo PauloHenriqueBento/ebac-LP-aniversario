@@ -11,8 +11,10 @@
     }
 
     .container {
-        display: flex;
-        gap: 40px;
+         > div{
+            display: flex;
+            gap: 40px;
+        }
     }
 
     &__image {
@@ -36,7 +38,9 @@
         padding: 50px 0;
 
         .container{
-            display: block;
+            > div {
+                display: block;
+            }
         }
 
         &__image {
